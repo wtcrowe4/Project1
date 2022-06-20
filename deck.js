@@ -19,28 +19,7 @@ let shuffle = (deck) => {
     
 
 }
-shuffle(DECK)
-console.log(DECK)
-
-let computerCard1 = document.getElementById('computerCard1').src = `assets/cards/${DECK[0]}.png`
-
-//Linking pictures to each card
-// const CARDS = [{card:'2S', img:'assets/cards/2_of_spades.png'},
-//                 {card:'3S', img:'assets/cards/3_of_spades.png'},
-//                 {card:'4S', img:'assets/cards/4_of_spades.png'},
-//                 {card:'5S', img:'assets/cards/5_of_spades.png'},
-//                 {card:'6S', img:'assets/cards/6_of_spades.png'},
-//                 {card:'7S', img:'assets/cards/7_of_spades.png'},   
-//                 {card:'8S', img:'assets/cards/8_of_spades.png'},
-//                 {card:'9S', img:'assets/cards/9_of_spades.png'},
-//                 {card:'10S', img:'assets/cards/10_of_spades.png'},
-//                 {card:'JS', img:'assets/cards/jack_of_spades2.png'},
-//                 {card:'QS', img:'assets/cards/queen_of_spades2.png'},
-//                 {card:'KS', img:'assets/cards/king_of_spades2.png'},
-//                 {card:'AS', img:'assets/cards/ace_of_spades.png'},
-
-//             ]
 
 
-// let computerCard1 = document.getElementById('computerCard1').src = CARDS[12].img
-// let computerCard2 = document.getElementById('computerCard2').src = CARDS[11].img
+
+
