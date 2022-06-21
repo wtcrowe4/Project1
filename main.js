@@ -1,7 +1,12 @@
+//var PokerEvaluator = require("poker-evaluatehand");
+//import * as PokerEvaluator from './node_modules/poker-evaluatehand';
+//import {evalHand} from './node_modules/poker-evaluatehand' 
+
+
 //Dealer gives you the 1st & 3rd card from the deck
 let deal = () => {
-    shuffle(DECK)
-    console.log(DECK)
+    //shuffle(DECK)
+    //console.log(DECK)
     let playerCard1 = document.getElementById('playerCard1').src = `assets/cards/${DECK[0]}.png`
     let playerCard2 = document.getElementById('playerCard2').src = `assets/cards/${DECK[2]}.png`
 }
@@ -44,9 +49,28 @@ let DealBtn = document.getElementById('dealbtn').addEventListener('click', () =>
                 //Dealer shows his hand.
                 let FinalBtn = document.getElementById('finalbtn').addEventListener('click', () => {
                     dealerShows()
+                    
+                    
                     //Add logic to compare hands
+                    //Player Hand = DECK[0,2,4,5,6,7,8]
+                    //Dealer Hand = DECK[1,3,4,5,6,7,8]
+                
+                
                 })
             })
         })
     })
 })
+
+
+
+shuffle(DECK)
+console.log(DECK)
+const playerHand = [DECK[0], DECK[2], DECK[4], DECK[5], DECK[6], DECK[7], DECK[8]]
+const dealerHand = [DECK[1], DECK[3], DECK[4], DECK[5], DECK[6], DECK[7], DECK[8]]
+console.log(playerHand)
+console.log(dealerHand)
+
+//evalHand(playerHand)
+//evalHand(dealerHand)
+
