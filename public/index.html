@@ -1,0 +1,54 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Hold'em</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <img id="background" src="./assets/felt_table.jpg" alt="background">
+    <h1>Texas Hold'em</h1>
+    <div id="table">
+        <div id="dealerHand" class="cardSet">
+            <img class="cards" id="dealerCard1" src="./assets/cards/face_down.jpg" alt="card">
+            <img class="cards" id="dealerCard2" src="./assets/cards/face_down.jpg" alt="card">
+        </div>
+        <div id="communityCards" class="cardSet">
+            <img class="cards" id="communityCard1" src="./assets/cards/face_down.jpg" alt="card">
+            <img class="cards" id="communityCard2" src="./assets/cards/face_down.jpg" alt="card">
+            <img class="cards" id="communityCard3" src="./assets/cards/face_down.jpg" alt="card">
+            <img class="cards" id="communityCard4" src="./assets/cards/face_down.jpg" alt="card">
+            <img class="cards" id="communityCard5" src="./assets/cards/face_down.jpg" alt="card">
+        </div>
+        <div id="playerHand" class="cardSet">
+            <img class="cards" id="playerCard1" src="./assets/cards/face_down.jpg" alt="card">
+            <img class="cards" id="playerCard2" src="./assets/cards/face_down.jpg" alt="card">
+        </div>
+    </div>
+    <div id="buttons">
+        <button id="dealbtn">Deal</button> 
+        <button id="flopbtn">Flop</button> 
+        <button id="turnbtn">Turn</button> 
+        <button id="riverbtn">River</button>
+        <button id="finalbtn">Finish</button>
+    </div>
+    <div id="betting">
+        <button id="betbtn">Bet</button>
+    </div>
+
+    
+   
+    
+   
+  
+    <script src="./deck.js"></script>
+    <script src="./evaluate.js"></script>
+    <script src="./main.js"></script>
+    
+   
+    </body>
+</html>

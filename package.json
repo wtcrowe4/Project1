@@ -1,22 +1,27 @@
 {
   "name": "project1",
   "version": "1.0.0",
-  "description": "Web Browser Game\r This is a one player Texas Hold'em game.",
+  "description": "Texas Hold'em Game",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wtcrowe4/Project1.git"
   },
-  "author": "",
+  "author": "Thomas Crowe",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wtcrowe4/Project1/issues"
   },
   "homepage": "https://github.com/wtcrowe4/Project1#readme",
   "dependencies": {
-    "poker-evaluatehand": "^0.3.4"
+    "express": "^4.18.1",
+    "phe": "^0.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }

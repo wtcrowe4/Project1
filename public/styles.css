@@ -1,0 +1,61 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    margin-top: -25px;
+   
+}
+
+#background {
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    position: relative;
+    color: tan;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 4em;
+    
+}
+
+#table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.cardSet {
+    margin: 10px;
+}
+.cards {
+    height: 250px;
+    width: 170px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+   
+}
+
+#betting {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: tan;
+    color: navy;
+    font-size: 2em;
+    border-radius: 20px;
+}
