@@ -1,4 +1,4 @@
-//evaluate.js is taken from thlorenz's github "phe" poker hand evaluator
+//evaluate.js is taken from thlorenz's github "phe" poker hand evaluator.
 //   https://github.com/thlorenz/phe
 
 //Tables
