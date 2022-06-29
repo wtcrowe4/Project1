@@ -17,10 +17,33 @@ let shuffle = (deck) => {
         deck[i] = deck[randomIndex]
         deck[randomIndex] = shuffledCard
     }
-    
-
 }
 
+//Function to flip cards to back and shuffle deck to start new hand
+let newGame = () => {
+    let playerCard1 = document.getElementById('playerCard1')
+        .src = 'assets/cards/face_down.jpg'
+    let playerCard2 = document.getElementById('playerCard2')
+        .src = 'assets/cards/face_down.jpg'
+    let dealerCard1 = document.getElementById('dealerCard1')
+        .src = 'assets/cards/face_down.jpg'
+    let dealerCard2 = document.getElementById('dealerCard2')
+        .src = 'assets/cards/face_down.jpg'
+    let communityCard1 = document.getElementById('communityCard1')
+        .src = 'assets/cards/face_down.jpg'
+    let communityCard2 = document.getElementById('communityCard2')
+        .src = 'assets/cards/face_down.jpg'
+    let communityCard3 = document.getElementById('communityCard3')
+        .src = 'assets/cards/face_down.jpg'
+    let communityCard4 = document.getElementById('communityCard4')
+        .src = 'assets/cards/face_down.jpg'
+    let communityCard5 = document.getElementById('communityCard5')
+        .src = 'assets/cards/face_down.jpg'
+    
+        shuffle(DECK)
+}
 
-
-
+//Function to show card to clean up code
+let flipCard = (card, deck) => {
+    document.getElementById('card').src = `assets/cards/${deck}.png`
+}
