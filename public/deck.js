@@ -39,11 +39,17 @@ let newGame = () => {
         .src = 'assets/cards/face_down.jpg'
     let communityCard5 = document.getElementById('communityCard5')
         .src = 'assets/cards/face_down.jpg'
+
+    //Disable buttons to make sure next hands goes in order
+    FlopBtn.onclick=""
+    TurnBtn.onclick=""
+    RiverBtn.onclick=""
+    FinalBtn.onclick=""
     
-        shuffle(DECK)
+    shuffle(DECK)
 }
 
 //Function to show card to clean up code
 let flipCard = (card, deck) => {
-    document.getElementById('card').src = `assets/cards/${deck}.png`
+    card = document.getElementById('card').src = `assets/cards/${deck}.png`
 }

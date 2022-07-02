@@ -3,19 +3,29 @@ html, body {
     padding: 0px;
     overflow: hidden;
     background-image: url('./assets/vecteezy.jpg');
-    background-position: center center;
-    background-size: 2500px;
+    background-position: center -140px;
+    background-size: 3000px;
     background-repeat: no-repeat;
-    margin-top: 20px;
+    /* padding-top: 50px; */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/* #background {
+    z-index: -2;
+    position: absolute;
+}
+#backgroundImage{
+    height: 1vh;
+    
+    
+} */
 
 #container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
+    margin-top: 50px;
 }
 
 h1 {
@@ -25,16 +35,18 @@ h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-size: 5em;
     text-shadow: 2px 2px 2px white;
+    margin-top: 0px;
 }
 
 #table {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .cardSet {
-    margin: 10px;
+    margin: 40px;
 }
 .cards {
     height: 220px;
@@ -58,16 +70,16 @@ button {
     margin: 5px;
     padding: 10px;
     background-color: tan;
-    color: navy;
     font-size: 2em;
     border-radius: 20px;
 }
 
 #scoreboard {
-    background-color: white;
-    width: 260px;
+    background-color: rgb(232, 200, 158);
+    width: 280px;
     height: 120px;
     position: absolute;
+    margin-top: -40px;
 }
 
 a {
