@@ -41,7 +41,7 @@
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
-  padding-top: 6vh;
+  padding-top: 2vh;
   width: 80vw;
   height: 50vh;
 }
@@ -51,19 +51,61 @@
   padding-bottom: 2rem;
 }
 
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 0 0;
+}
+#buttons button {
+  width: 50%;
+  height: 100%;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease 0.5s all;
+}
+#buttons button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 #scoreboard {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
-  padding-top: 6vh;
-  width: 30vw;
-  height: 15vh;
+  width: 25vw;
+  height: 8vh;
   position: fixed;
-  bottom: 5rem;
-  left: 5rem;
+  bottom: 18rem;
+  right: 5rem;
   background-color: white;
+}
+#scoreboard h2 {
+  font-size: 2vh;
+  color: black;
+  text-align: center;
+}
+
+#links {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+#links a {
+  color: white;
+  text-decoration: none;
 }
 
 footer {
