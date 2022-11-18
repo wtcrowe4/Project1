@@ -50,7 +50,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 10px 10px 0 0;
 
     button {
@@ -65,7 +65,7 @@
         transition: ease 0.5s all;
 
         &:hover {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.8);
         }
     }
 }
