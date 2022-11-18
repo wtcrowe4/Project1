@@ -100,7 +100,7 @@ function playHand () {
                     river()
                     FinalBtn.onclick = () => {
                         dealerShows()
-                        setTimeout(evaluateHands, 500)
+                        setTimeout(evaluateHands, 2000)
                     }
                 }
             }

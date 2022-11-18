@@ -33,7 +33,24 @@
     height: 50vh;
 }
 
+.cardSet {
+    transition: ease 2s all;
+}
 
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-top: 6vh;
+    width: 30vw;
+    height: 15vh;
+    position: fixed;
+    bottom: 5rem;
+    left: 5rem;
+    background-color: white;
+}
 
 footer {
     color: white;
