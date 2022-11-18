@@ -28,11 +28,12 @@
   flex-direction: column;
 }
 #container h1 {
-  font-size: 5vh;
+  font-size: 6vh;
   color: white;
   text-align: center;
   position: fixed;
-  top: 1rem;
+  top: 5rem;
+  text-shadow: lightgoldenrodyellow 0 0 20px;
 }
 
 #table {
@@ -47,7 +48,7 @@
 }
 
 .cardSet {
-  transition: ease 2s all;
+  transition: ease 0.5s all;
   padding-bottom: 2rem;
 }
 
@@ -85,6 +86,7 @@
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
+  box-shadow: lightgoldenrodyellow 0 0 20px;
   width: 25vw;
   height: 8vh;
   position: fixed;
