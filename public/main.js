@@ -81,6 +81,10 @@ let evaluateHands = () => {
     dealerScoreBoard.textContent = `Dealer Hands Won:    ${dealerScore}`
 }
 
+// Code for betting
+
+    
+
 //Cleaner game code
 //Button assignment
 let DealBtn = document.getElementById('dealbtn')
