@@ -35,16 +35,13 @@
 }
 
 #scoreboard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flexCenterCol;
     border-radius: 10px;
     box-shadow:  $litUpShadow;
     width: 25vw;
     height: 8vh;
     position: fixed;
-    bottom: 18rem;
+    bottom: 15rem;
     right: 5rem;
     background-color: $light;
     
@@ -59,6 +56,7 @@
     position: fixed;
     top: 1rem;
     right: 1rem;
+    font-size: .5rem;
     
     a {
         color: $light;
@@ -72,6 +70,78 @@ footer {
     position: fixed;
     bottom: 1rem;
     left: 2rem;
+    font-size: .5rem;
 }
 
 
+// Mobile Styles
+
+@media screen and (max-width: 600px) {
+    #container {
+        height: $fullH;
+        width: $fullW;
+        @include flexCenterCol;
+
+        h1 {
+            font-size: 6vh;
+            color: $light;
+            text-align: center;
+            position: fixed;
+            top: 2rem;
+            text-shadow: $litUpShadow;
+        }
+    }
+    
+    #table {
+        @include flexCenterCol;
+        border-radius: 10px;
+        padding-top: 2vh;
+        width: 60vw;
+        height: 30vh;
+    }
+    
+    #scoreboard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 10px;
+        box-shadow:  $litUpShadow;
+        width: 90vw;
+        height: 4vh;
+        position: fixed;
+        bottom: 7rem;
+
+        
+        
+    
+        background-color: $light;
+        
+        h2 {
+            font-size: 2vh;
+            color: black;
+            text-align: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+    
+    #links {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        
+        a {
+            color: $light;
+            text-decoration: none;
+        }
+    }
+    
+    footer {
+        color: $light;
+        text-decoration: none;
+        position: fixed;
+        bottom: 1px;
+        left: 2px;
+    }
+}

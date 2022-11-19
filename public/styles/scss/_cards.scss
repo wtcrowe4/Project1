@@ -1,5 +1,8 @@
 @import 'config';
 
+
+
+
 .cardSet {
     transition: ease .5s all;
     padding-bottom: 2rem;
@@ -11,5 +14,12 @@
     &:hover {
         transform: scale(1.1);
         box-shadow: $cardShadowHover;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        @include cardStyle;
+        transform: scaleX(1.8);
     }
 }

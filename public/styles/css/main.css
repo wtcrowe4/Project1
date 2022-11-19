@@ -18,6 +18,19 @@
   box-shadow: 0 0 10px 0 rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 600px) {
+  .cards {
+    height: 10vh;
+    width: 6vw;
+    flex-shrink: 2;
+    flex-grow: 1;
+    transition: all 1s ease;
+    transform: rotateY(360);
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.8);
+    margin: 5px;
+    transform: scaleX(1.8);
+  }
+}
 #buttons {
   display: flex;
   justify-content: center;
@@ -32,8 +45,8 @@
   border-radius: 10px 10px 0 0;
 }
 #buttons button {
-  width: 50%;
-  height: 100%;
+  width: 20vw;
+  height: 10vh;
   border: none;
   background: none;
   color: white;
@@ -43,7 +56,7 @@
   transition: ease 0.5s all;
 }
 #buttons button:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -95,7 +108,7 @@
   width: 25vw;
   height: 8vh;
   position: fixed;
-  bottom: 18rem;
+  bottom: 15rem;
   right: 5rem;
   background-color: white;
 }
@@ -109,6 +122,7 @@
   position: fixed;
   top: 1rem;
   right: 1rem;
+  font-size: 0.5rem;
 }
 #links a {
   color: white;
@@ -121,4 +135,70 @@ footer {
   position: fixed;
   bottom: 1rem;
   left: 2rem;
+  font-size: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #container h1 {
+    font-size: 6vh;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 2rem;
+    text-shadow: lightgoldenrodyellow 0 0 20px;
+  }
+  #table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-top: 2vh;
+    width: 60vw;
+    height: 30vh;
+  }
+  #scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: lightgoldenrodyellow 0 0 20px;
+    width: 90vw;
+    height: 4vh;
+    position: fixed;
+    bottom: 7rem;
+    background-color: white;
+  }
+  #scoreboard h2 {
+    font-size: 2vh;
+    color: black;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #links {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+  #links a {
+    color: white;
+    text-decoration: none;
+  }
+  footer {
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    bottom: 1px;
+    left: 2px;
+  }
 }/*# sourceMappingURL=main.css.map */
