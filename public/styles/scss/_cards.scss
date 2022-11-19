@@ -1,12 +1,15 @@
 @import 'config';
 
+.cardSet {
+    transition: ease .5s all;
+    padding-bottom: 2rem;
+}
+
 .cards {
-    height: 10vh;
-    width: 6vw;
-    flex-shrink: 2;
-    flex-grow: 1;
-    transition: all 1s ease;
-    transform: rotateY(360);
-    
-    box-shadow: $cardShadow;
+    @include cardStyle;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: $cardShadowHover;
+    }
 }

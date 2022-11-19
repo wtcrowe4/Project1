@@ -1,10 +1,31 @@
+$backgroundImage:  url(../../assets/vecteezy.jpg);
 $dark: black;
 $light: white;
+$fullH: 100vh;
+$fullW: 100vw;
 $btn: rgba(0, 0, 0, 0.7);
 $btnhover: rgba(0, 0, 0, 0.8);
 $litUpShadow: lightgoldenrodyellow 0 0 20px;
 $cardShadow: 0 0 7px 0 rgba(0, 0, 0, 0.8);
+$cardShadowHover: 0 0 10px 0 rgba(0, 0, 0, 1);
 
+@mixin resetAndFont {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@mixin cardStyle {
+    height: 10vh;
+    width: 6vw;
+    flex-shrink: 2;
+    flex-grow: 1;
+    transition: all 1s ease;
+    transform: rotateY(360);
+    box-shadow: $cardShadow;
+    margin: 5px;
+}
 
 @mixin flexCenterCol { display: flex;
     justify-content: center;
@@ -19,10 +40,5 @@ $cardShadow: 0 0 7px 0 rgba(0, 0, 0, 0.8);
 }
 
 
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-}
+
+

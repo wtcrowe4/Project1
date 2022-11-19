@@ -1,13 +1,18 @@
 @import 'config';
 @import 'cards'; 
+@import 'buttons';
+
+* {
+    @include resetAndFont;
+}
 
 #container {
-    background: url(../../assets/vecteezy.jpg);
+    background: $backgroundImage;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+    height: $fullH;
+    width: $fullW;
     @include flexCenterCol;
     
 
@@ -29,38 +34,6 @@
     height: 50vh;
 }
 
-.cardSet {
-    transition: ease .5s all;
-    padding-bottom: 2rem;
-}
-
-#buttons {
-    @include flexCenterRow;
-    width: 100%;
-    height: 10vh;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background:$btn;
-    border-radius: 10px 10px 0 0;
-
-    button {
-        width: 50%;
-        height: 100%;
-        border: none;
-        background: none;
-        color: $light;
-        font-size: 2rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: ease 0.5s all;
-
-        &:hover {
-            background: $btnhover;
-        }
-    }
-}
-
 #scoreboard {
     display: flex;
     justify-content: center;
@@ -74,6 +47,7 @@
     bottom: 18rem;
     right: 5rem;
     background-color: $light;
+    
     h2 {
         font-size: 2vh;
         color: black;
@@ -85,6 +59,7 @@
     position: fixed;
     top: 1rem;
     right: 1rem;
+    
     a {
         color: $light;
         text-decoration: none;
