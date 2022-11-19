@@ -1,4 +1,23 @@
-$shadow: lightgoldenrodyellow 0 0 20px;
+$dark: black;
+$light: white;
+$btn: rgba(0, 0, 0, 0.7);
+$btnhover: rgba(0, 0, 0, 0.8);
+$litUpShadow: lightgoldenrodyellow 0 0 20px;
+$cardShadow: 0 0 7px 0 rgba(0, 0, 0, 0.8);
+
+
+@mixin flexCenterCol { display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flexCenterRow { display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 
 * {
     margin:0;

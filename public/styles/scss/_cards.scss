@@ -1,3 +1,5 @@
+@import 'config';
+
 .cards {
     height: 10vh;
     width: 6vw;
@@ -6,5 +8,5 @@
     transition: all 1s ease;
     transform: rotateY(360);
     
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: $cardShadow;
 }

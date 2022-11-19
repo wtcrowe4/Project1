@@ -1,7 +1,7 @@
 //Score variables
 var playerScore = 0
 var dealerScore = 0   
-
+let message = document.getElementById('messageText')    
 //Functions
 //Dealer gives you the 1st & 3rd card from the deck
 let deal = () => {
@@ -61,15 +61,18 @@ let evaluateHands = () => {
     //Alerts for who won the hand        
     if (playerNum < dealerNum) {
         playerScore++
+        //message.innerHTML = `You win! ${playerResult} beats ${dealerResult}`
         alert(`Player wins with a ${playerResult}`) //? "" :
         newGame()
     
     } else if (playerNum > dealerNum) {
         dealerScore++
+        //message.innerHTML = `You lose! ${dealerResult} beats ${playerResult}`
         alert(`Dealer wins with a ${dealerResult}`) //? "" :
         newGame()
     
     } else  {
+        //message.innerHTML = `It's a tie!`
         alert(`Hand is tied with a ${playerResult}.`) //? "" :
         newGame()
     

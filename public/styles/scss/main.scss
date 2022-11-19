@@ -8,27 +8,21 @@
     background-position: center;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flexCenterCol;
     
 
     h1 {
         font-size: 6vh;
-        color: white;
+        color: $light;
         text-align: center;
         position: fixed;
         top: 5rem;
-        text-shadow: $shadow;
+        text-shadow: $litUpShadow;
     }
 }
 
 #table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flexCenterCol;
     border-radius: 10px;
     padding-top: 2vh;
     width: 80vw;
@@ -41,16 +35,13 @@
 }
 
 #buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    @include flexCenterRow;
     width: 100%;
     height: 10vh;
     position: fixed;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background:$btn;
     border-radius: 10px 10px 0 0;
 
     button {
@@ -58,14 +49,14 @@
         height: 100%;
         border: none;
         background: none;
-        color: white;
+        color: $light;
         font-size: 2rem;
         font-weight: bold;
         cursor: pointer;
         transition: ease 0.5s all;
 
         &:hover {
-            background: rgba(0, 0, 0, 0.8);
+            background: $btnhover;
         }
     }
 }
@@ -76,13 +67,13 @@
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow:  $shadow;
+    box-shadow:  $litUpShadow;
     width: 25vw;
     height: 8vh;
     position: fixed;
     bottom: 18rem;
     right: 5rem;
-    background-color: white;
+    background-color: $light;
     h2 {
         font-size: 2vh;
         color: black;
@@ -95,13 +86,13 @@
     top: 1rem;
     right: 1rem;
     a {
-        color: white;
+        color: $light;
         text-decoration: none;
     }
 }
 
 footer {
-    color: white;
+    color: $light;
     text-decoration: none;
     position: fixed;
     bottom: 1rem;
