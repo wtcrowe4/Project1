@@ -78,9 +78,9 @@ let evaluateHands = () => {
     
     }
     //Updating scoreboard
-    let playerScoreBoard = document.getElementById('playerScoreBoard') as HTMLDivElement
+    let playerScoreBoard = document.getElementById('playerScoreBoard') as HTMLElement
     playerScoreBoard.textContent = `Player Hands Won:    ${playerScore}`
-    let dealerScoreBoard = document.getElementById('dealerScoreBoard') as HTMLDivElement
+    let dealerScoreBoard = document.getElementById('dealerScoreBoard') as HTMLElement
     dealerScoreBoard.textContent = `Dealer Hands Won:    ${dealerScore}`
 }
 
